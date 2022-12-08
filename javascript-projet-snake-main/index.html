@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake It !</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="snakeit">
+        <img src="assets/snakeitglitch.png">
+    </div>
+    <div id="div_score">
+        <p id="score"></p>
+    </div>
+    <div id="div_menu">
+        <div id="div_button">
+            <nav id="nav_free">
+                <button id="button_free_small" class="button" >Petit mode libre</button>
+                <button id="button_free_mid" class="button" >Moyen mode libre</button>
+                <button id="button_free_big" class="button" >Grand mode libre</button>
+                <button id="button_free_giant" class="button" >Géant mode libre</button>
+            </nav>
+            <button id="button_adventure" class="button" >Mode aventure</button>
+            <button id="button_settings" class="button" >Paramètres</button>
+            <button id="button_credits" class="button" >Crédits</button>
+        </div>
+    </div>
+    <div id="div_settings">
+        <input type="range" id="speed" name="speed" min="0" max="790">
+        <label for="vitesse">Vitesse du snake</label>
+        
+        <div>
+            <input type="color" id="headcolor" name="headcolor">
+            <label for="headcolor">Couleur de la tête du snake</label>
+        </div>
+
+        <div>
+            <input type="color" id="snakecolor" name="snakecolor">
+            <label for="snakecolor">Couleur du snake</label>
+        </div>
+
+        <div>
+            <input type="color" class="board_color" id="board_color1" name="board_color1">
+            <label for="board_color1">Couleur 1 du plateau</label>
+        </div>
+
+        <div> 
+            <input type="color" class="board_color" id="board_color2" name="board_color2">
+            <label for="board_color2">Couleur 2 du plateau</label>       
+        </div>
+        <div> 
+            <input type="color" id="apple_color" name="apple_color">
+            <label for="apple_color">Couleur des pommes</label>       
+        </div>
+    </div>
+
+    <div id="canvas_container">
+        <canvas id="board" width="0" height="0"></canvas>
+    </div>
+    <script type="text/javascript" src="script/script.js"></script>
+    
+</body>
+</html>
